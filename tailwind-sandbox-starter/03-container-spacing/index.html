@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- Container -->
-    <div>
+    <div class="container mx-x">
       <article>
         <h3>Article One</h3>
         <p>
@@ -17,16 +17,56 @@
           Exercitationem laboriosam libero molestiae recusandae accusantium
           voluptates? Expedita dignissimos amet eveniet dolore nobis odio a
           sunt, maiores quasi. Modi amet quos dolores!
+
+          MARGIN IS THE OUTSIDE, PADDING IS THE INSIDE!!!!!
         </p>
       </article>
 
       <!-- Margin -->
-
+      <div class="bg-slate-100 m-4">Hello World (Margin everywhere)</div>
+      <div class="bg-slate-100 ml-4">Hello World (Margin only on left)</div>
+      <div class="bg-slate-100 mr-4">Hello World (Margin only on right)</div>
+      <div class="bg-slate-100 mt-4">Hello World (Margin only on top)</div>
+      <div class="bg-slate-100 mb-4">Hello World (Margin only on bottom)</div>
+      <div class="bg-slate-100 mb-[22px]">Using Arb values</div>
+      
       <!-- Padding -->
+      <div class="bg-slate-100 p-4">Hello World (PADDING everywhere)</div>
+      <div class="bg-slate-100 pl-4">Hello World (PADDING only on left)</div>
+      <div class="bg-slate-100 pr-4">Hello World (PADDING only on right)</div>
+      <div class="bg-slate-100 pt-4">Hello World (PADDING only on top)</div>
+      <div class="bg-slate-100 pb-4">Hello World (PADDING only on bottom)</div>
+      <div class="bg-slate-100 pb-[22px]">Using Arb values</div>
 
       <!-- Space Between X -->
+      <!-- Space Between X -->
+       <div class="flex mt-24 space-x-4"> <!-- Creates 4 rem of space between each child item -->
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+       </div>
 
       <!-- Space Between Y -->
+      <hr class="h-8 my-8 bg-red-100">
+      <div class="flex flex-col mt-24 space-y-4"> <!-- Creates 4 rem of space between each child item -->
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+       </div>
     </div>
   </body>
 </html>

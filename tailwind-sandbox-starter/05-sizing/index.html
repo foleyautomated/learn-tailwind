@@ -9,8 +9,17 @@
   </head>
   <body>
     <!-- Width -->
+    <div class="bg-black text-white w-0">You Can't See This</div>
+    <div class="bg-black text-white w-12">You Can See This</div>
+    <div class="bg-black text-white w-96">Giant Box</div>
 
     <!-- Percentages -->
+     <div class="bg-green-700 text-white w-1/4">25% of container width</div>
+     <div class="bg-red-700 text-white w-1/2">25% of container width</div>
+     <div class="bg-blue-600 text-white w-screen">100% of viewport width ('wv') units</div>  
+     <div class="bg-blue-600 text-white w-full">100% of viewport width ('wv') units</div>  
+     <div class="bg-blue-600 text-white w-[300px]">arbitrary units</div>  
+     <div class="bg-gray-300 max-w long mx-auto"></div>
 
     <!-- Width of the viewport -->
 
@@ -21,8 +30,25 @@
     <!-- Arbitrary width -->
 
     <!-- Max Width -->
+     <div class="bg-gray-300 max-w-lg mx-auto">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Exercitationem laboriosam libero molestiae recusandae accusantium
+      voluptates? Expedita dignissimos amet eveniet dolore nobis odio a
+      sunt, maiores quasi. Modi amet quos dolores!
+      <br>
+      mx-auto sets the left and right margins to auto, centering the element
+      max-w-lg sets the maximum width to 32rem (512px)
+     </div>
 
     <!-- Height (Most of the same options as widths) -->
+     <div class="flex items-end">
+      <div class="bg-orange-500 w-20 h-20">items h-20</div>
+      <div class="bg-orange-500 w-20 h-32">items h-32</div>
+      <div class="bg-orange-500 w-20 h-40">items h-40</div>
+      <div class="bg-orange-500 w-20 h-48">items h-48</div>
+      <div class="bg-orange-500 w-20 h-64">items h-64</div>
+      <div class="bg-orange-500 w-20 h-96">items h-96</div>   <!-- h-screen fills the whole thing -->
+     </div>
 
     <!-- Min Height -->
 

@@ -7,9 +7,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>TailwindCSS</title>
   </head>
-  <body>
+  <body class="font-xs">
     <!-- Positioning -->
+    <div class="relative h-12 w-1/2 bg-red-200">
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p>Absolute bottom-right Child</p>
+      </div>
+    </div>
 
+      <div class="relative h-96 w-96 bg-yellow-100">    
+        <p>Absolute bottom-right Child</p>
+
+      <div class="absolute left-0 top-0 h-24 w-16 bg-red-500">
+        <p>Absolute top-left Child</p>
+      </div>
+      <div class="absolute inset-x-0 top-0 h-16 bg-yellow-500/20">
+        <p>e2e across the top using inset</p> 
+      </div>
+      <div class="absolute inset-y-0 bottom-0 left-0 bg-green-200 w-8">Box</div>
+    </div>
+    </div>
     <!-- Top left corner -->
 
     <!-- Top right corner -->
@@ -27,11 +44,65 @@
     <!-- Span bottom edge -->
 
     <!-- Display Classes -->
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Exercitationem <span class="inline font-bold">This is INLINE!</span>laboriosam libero molestiae recusandae accusantium
+      voluptates? Expedita dignissimos <span class="inline-block font-bold">This is an inline block</span> amet eveniet dolore nobis odio a
+      sunt, <span class="block font-bold">This is a block</span>maiores quasi. Modi <span class="hidden font-bold"></span> amet quos dolores!
+    </div>
 
-    <!-- Z-Index -->
+    <!-- Z-Index -->   
+    <!-- Z-Index Can mess with higher z-numbers to move items on top of one another-->
+     <div class="relative h-36">
+      <div class="absolute left-10 w-24 h-24 bg-blue-300 z-40">1</div>
+      <div class="absolute left-20 w-24 h-24 bg-blue-400">2</div>
+      <div class="absolute left-40 w-24 h-24 bg-blue-500 z-10">3</div>
+      <div class="absolute left-60 w-24 h-24 bg-blue-600">4</div>
+      <div class="absolute left-80 w-24 h-24 bg-blue-700">5</div>
+     </div>
 
     <!-- Floats -->
+    <h1>Float Left</h1>
+     <div class="w-1/2">
+      <img src="../assets/img/img1.jpg" alt="" class="h-48 w-48 float-left">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        laboriosam libero molestiae recusandae accusantium voluptates? Expedita
+        dignissimos amet eveniet dolore nobis odio a sunt, maiores quasi. Modi
+        amet quos dolores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        laboriosam libero molestiae recusandae accusantium voluptates? Expedita
+        dignissimos amet eveniet dolore nobis odio a sunt, maiores quasi. Modi
+        amet quos dolores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        laboriosam libero molestiae recusandae accusantium voluptates? Expedita
+        dignissimos amet eveniet dolore nobis odio a sunt, maiores quasi. Modi
+        amet quos dolores!        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        laboriosam libero molestiae recusandae accusantium voluptates? Expedita
+        dignissimos amet eveniet dolore nobis odio a sunt, maiores quasi. Modi
+        amet quos dolores!
+      </p>
+     </div>
   </body>
+  <img src="../assets/img/image_transparent_Craiyon.png" alt="" class="h-48 w-48 float-left">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+    laboriosam libero molestiae recusandae accusantium voluptates? Expedita
+    dignissimos amet eveniet dolore nobis odio a sunt, maiores quasi. Modi
+    amet quos dolores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+    laboriosam libero molestiae recusandae accusantium voluptates? Expedita
+    dignissimos amet eveniet dolore nobis odio a sunt, maiores quasi. Modi
+    amet quos dolores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+    laboriosam libero molestiae recusandae accusantium voluptates? Expedita
+    dignissimos amet eveniet dolore nobis odio a sunt, maiores quasi. Modi
+    amet quos dolores!        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+    laboriosam libero molestiae recusandae accusantium voluptates? Expedita
+    dignissimos amet eveniet dolore nobis odio a sunt, maiores quasi. Modi
+    amet quos dolores!
+  </p>
+ </div>
 </html>
 
 <!-- Position Classes
