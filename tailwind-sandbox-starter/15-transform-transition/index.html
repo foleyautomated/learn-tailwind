@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,16 +8,65 @@
     <title>Transform & Transition</title>
   </head>
   <body>
+    <!-- Script snippet showing how to add a new transition duration-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            transitionDuration: {
+              2000: "2000ms",
+            },
+          },
+        },
+      };
+    </script>
+    <a class="text-blue-500 hover:text-blue-300" href="../index.html"
+      >Go Back</a
+    >
+
     <!-- No Transition -->
     <button
-      class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700"
+      class="m-24 rounded bg-blue-500 px-8 py-2 text-white hover:bg-fuchsia-800"
     >
-      Click me
+      Hover for transition
     </button>
 
     <!-- Transition -->
+    <button
+      class="m-24 rounded bg-blue-500 px-8 py-2 text-white transition-colors duration-1000 hover:bg-fuchsia-800"
+    >
+      Hover over me for a longer transition
+    </button>
 
+    <button
+      class="m-24 rounded bg-blue-500 px-8 py-2 text-white transition duration-1000 hover:bg-fuchsia-800 hover:opacity-20"
+    >
+      Hover over me for a longer transition of both Opacity and Background Color
+    </button>
     <!-- Transition & Transform -->
+    <button
+      class="m-24 rotate-12 rounded bg-blue-500 px-8 py-2 text-white hover:bg-fuchsia-800"
+    >
+      Rotated via "transform"
+    </button>
+
+    <button
+      class="m-24 bg-blue-500 px-8 py-2 text-white transition-transform duration-1000 hover:rotate-180 hover:bg-fuchsia-800"
+    >
+      Hover to Transition color and rotation
+    </button>
+
+    <img
+      src="../assets/img/img1.jpg"
+      alt="rotating and skweing on hover"
+      class="w--48 transition duration-1000 hover:rotate-180 hover:skew-x-12 hover:scale-75"
+    />
+
+    <img
+      src="../assets/img/img1.jpg"
+      alt="really long, custom transition duration. "
+      class="w--48 duration-2000 transition hover:rotate-180 hover:skew-x-12 hover:scale-75"
+    />
 
     <!-- Transform & Transition -->
   </body>

@@ -1,13 +1,59 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- This script tag lets us override the default behavior of tailwind to use a toggle, rather than the system mode-->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
     <title>Dark Mode</title>
   </head>
-  <body>
+  <body class="bg-cyan-100 dark:bg-slate-800">
+    <a class="block text-blue-500 hover:text-blue-300" href="../index.html"
+      >Go Back</a
+    >
+    <h1>Toggle for Dark Mode</h1>
+    <label class="relative m-6 inline-flex cursor-pointer items-center">
+      <input type="checkbox" class="peer sr-only" id="toggle" />
+      <div
+        class="peer h-6 w-11 rounded-full bg-gray-300 peer-checked:bg-black peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-gray-500 dark:bg-gray-700"
+      ></div>
+      <div
+        class="absolute left-0.5 top-0.5 h-5 w-5 rounded-full border border-gray-300 bg-white transition-transform peer-checked:translate-x-full"
+      ></div>
+    </label>
+    <div
+      class="container mx-auto mt-10 rounded-xl bg-cyan-400 px-6 py-8 shadow-xl dark:bg-slate-900"
+    >
+      <h3 class="font-medium tracking-tight text-slate-900 dark:text-white">
+        Lorem ipsum dolor sit.
+      </h3>
+      <p
+        class="dark:slate-text-400 mt-2 text-sm text-slate-500 dark:text-cyan-700"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+        cumque, officia voluptas est nam, distinctio sunt hic voluptatum ullam
+        ducimus mollitia itaque earum placeat dicta aliquam. Doloribus tempore
+        natus iusto autem, necessitatibus totam, labore ratione enim quod eos
+        perspiciatis impedit nesciunt ipsam, nisi explicabo placeat sit laborum
+        est quia aut.
+      </p>
+    </div>
+    <script>
+      document.getElementById("toggle").addEventListener("change", function () {
+        if (this.checked) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      });
+    </script>
+
     <!-- By default, you can have your project use whatever mode your OS is using. You can use "dark:{class}". You can also set your config to use a class instead of using your OS mode -->
   </body>
 </html>

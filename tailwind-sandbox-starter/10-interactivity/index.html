@@ -7,31 +7,71 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Interactivity</title>
   </head>
-  <body>
+  <body class="flex flex-col">
+    <br class="text-lg border border-blue-200 p-2 my-4 text-left">
+      <a class="text-blue-500 hover:text-blue-300" href="../index.html"
+        >Go Back </a
+      >
     <!-- Hover State Styling -->
      <button class="bg-black text-white py-3 px-5 rounded-lg m3 hover:bg-orange-500 hover:text-white">Hover over me</button>
      <button class="bg-black text-white py-3 px-5 rounded-lg m3 hover:bg-orange-500 hover:text-white">Hover over me</button>
      
 
     <!-- Focus State Styling -->
-
+     <button class="bg-black text-white py-3 rounded-lg m-3 focus:bg-yellow-500">Focus Me</button>
+     <input type="input" class="border-2 bg-slate-300 border-cyan-500 text-white py-3 rounded-lg m-3 focus:bg-yellow-500">Focus Me</input>
+     <input type="input" class="border-2 bg-slate-300 border-cyan-500 text-white py-3 rounded-lg m-3 focus:bg-yellow-500">Focus Me</input>
     <!-- Active State Styling -->
 
+    <button class="bg-black text-white py-3 rounded-lg m-3 focus:bg-yellow-500">Activate Me</button>
+    <input type="input" class="border-2 bg-slate-300 border-cyan-500 text-white py-3 rounded-lg m-3 active:bg-yellow-500">Activate Me</input>
+    <input type="input" class="border-2 bg-slate-300 border-cyan-500 text-white py-3 rounded-lg m-3 active:bg-yellow-500">Activate Me</input>
+    
     <!-- Styling based on parent state -->
+     <a href="" 
+     class="bg-sky-200 group block max-w-xs mx-auto rounded-lg p6 shadow-lg space-y-3 hover:bg-sky-500 p-4">
+      <h3 class="group-hover:text-white">Grouped Text 1</h3>
+      <h3 class="group-hover:text-white">Grouped Text 2</h3>
+      <p> Ungrouped Grouped Text</p>
+    </a>
 
-    <!-- Pseudo Classes -->
+    <!-- Pseudo Classes: 'first' gets ignored after the first row -->
+     <ul>
+      <li class="even:bg-fuchsia-400 odd:bg-fuchsia-100 first:bg-red-200">Some List Item 1</li>
+      <li class="even:bg-fuchsia-400 odd:bg-fuchsia-100 first:bg-red-200">Some List Item 2</li>
+      <li class="even:bg-fuchsia-400 odd:bg-fuchsia-100 first:bg-red-200">Some List Item 3</li>
+      <li class="even:bg-fuchsia-400 odd:bg-fuchsia-100 first:bg-red-200">Some List Item 4</li>
+      <li class="even:bg-fuchsia-400 odd:bg-fuchsia-100 first:bg-red-200">Some List Item 5</li>
+      <li class="even:bg-fuchsia-400 odd:bg-fuchsia-100 first:bg-red-200">Some List Item 6</li>
+     </ul>
 
     <!-- Appearance -->
+     <h1>Appearance</h1>
+     <select class="appearance-none">   <!-- Removes the Browser Specific up down symbols from the box. -->
+      <option value="Yes">Option 1</option>
+      <option value="No">Option 2</option>
+     </select>
+
     <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
 
     <!-- Cursor -->
-
+     <button class="bg-stone-700 border-2 border-stone-400 text-white py-3 px-5 rounded-lg cursor-pointer">Hover to see a 👆</button>
+     <button class="bg-stone-700 border-2 border-stone-400 text-white py-3 px-5 rounded-lg cursor-wait">Hover to see a ⌛</button>
+     <button class="bg-stone-700 border-2 border-stone-400 text-white py-3 px-5 rounded-lg cursor-not-allowed">Hover to see a 🚫</button>
     <!-- Resize -->
 
     <!-- User Select -->
+     <div class="select-none">You can't select this text</div>
+     <div class="select-text">Standard text selection</div>
+     <div class="select-all">Selects all if you click</div>
+     <div class="select-auto">This tries to help you select individual words</div>
 
     <!-- Smooth Scroll Example -->
-  </body>
+     <a href="#myItem" class="block my-6 text-red-500">Click to Scroll Smoothly</a>  <!-- Scroll Smooth class seems already built into the thing. -->
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur provident ea et saepe doloremque facilis optio porro sequi ipsum modi voluptas sit, ad repellat delectus quia voluptatibus tenetur? Modi minus impedit inventore at culpa numquam veniam vitae, quis esse, nostrum, molestias animi minima? Vel, nemo quae quia unde vitae consectetur quisquam hic magni perferendis repellendus eum! Modi, sed fuga quod quidem recusandae earum architecto voluptates tenetur hic ad illum! Quis eum et minus quisquam soluta odio illo, doloremque perferendis laudantium culpa molestias est accusantium voluptatibus id sunt assumenda! Molestias praesentium veritatis voluptatem! Voluptatibus distinctio exercitationem, pariatur quo eligendi aliquid ipsa doloremque, quod facilis nobis soluta ab quae nesciunt, a possimus obcaecati cumque neque perspiciatis in asperiores ratione numquam laboriosam est tenetur! Assumenda exercitationem dolor eaque molestiae nisi. Iure, temporibus maiores architecto reiciendis porro, impedit nisi omnis rem officiis consectetur blanditiis ad laborum nam officia eos provident repellendus voluptate nemo quia. Maxime inventore est officia saepe obcaecati dolorum iusto quas perspiciatis nemo totam beatae reiciendis sint quisquam placeat nostrum aut, eligendi perferendis voluptates error rerum facilis quaerat at omnis ducimus. Deleniti, odit aut dolor accusamus pariatur exercitationem suscipit eaque natus nesciunt tempore qui sequi debitis ullam praesentium nobis obcaecati. Aut, officiis distinctio quos iste itaque necessitatibus voluptates deserunt perspiciatis laboriosam error ut, porro quisquam numquam labore. Repellendus optio saepe porro a magni earum, sed maxime dolorem commodi soluta obcaecati ipsum. Rem, voluptate! Provident, eaque eius. Perferendis culpa debitis temporibus in officia non excepturi recusandae nemo voluptatum similique sequi cumque nobis numquam officiis vero praesentium, ipsa facilis, consequatur dicta porro dolores sapiente eius esse. Dicta exercitationem illum, repellendus velit architecto dolore provident? Nobis ratione reiciendis enim vero aut. Qui nam eligendi sapiente dolore consequuntur, culpa neque corrupti doloremque unde numquam, quo laboriosam excepturi facilis animi ipsum, sequi illum odio nesciunt quod exercitationem soluta. Tenetur, error nobis rem, similique iusto expedita nesciunt ut, dolore vel maiores rerum! Blanditiis quaerat iure necessitatibus libero repudiandae illum, consectetur vitae sapiente dicta unde. Tempore voluptate ut, qui rerum hic sunt doloremque eligendi possimus esse quia, nulla numquam ipsum culpa odio quae reprehenderit soluta delectus modi. Tenetur maxime quam laborum ea aperiam possimus, hic non eos, eum odit ut fuga ad magni quis reprehenderit rerum. Inventore temporibus error repellat nam quae animi dicta reiciendis earum illum optio asperiores deleniti commodi, cumque atque libero. Debitis sunt iusto aliquid voluptates! Ipsam recusandae eos quis excepturi beatae ipsum optio vero repellat!</p>
+     <div id="myItem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, laudantium commodi. Laudantium, eaque quidem minima blanditiis placeat culpa porro modi atque cum? Et velit temporibus ea exercitationem facere molestias quam explicabo, dolor natus esse soluta corrupti, impedit facilis, eos ab nemo minus ratione tenetur? Velit sit quam provident quo facere!</div>
+    </body>
 </html>
 
 <!-- Cursor

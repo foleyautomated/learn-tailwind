@@ -1,5 +1,10 @@
+# Live Server VSCode Plugin:
 `ALT + L + O` to open Live server
 
-div{Item $}*10 ==> Repeated list of items, 1-10
+# Emmet shortcuts
+`div{Item $}*10` ==> Repeated list of items, 1-10
+`lorem10` --> gives dummy text
+`lorem400` ---> even more dummy text
 
-lorem10 --> gives dummy text
+# Tailwind-Prettier Configuration
+https://github.com/tailwindlabs/prettier-plugin-tailwindcss
