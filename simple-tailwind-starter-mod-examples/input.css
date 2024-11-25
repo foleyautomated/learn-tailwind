@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* using @apply allows us to apply existing tailwind classes to everything */
+
+@layer base {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    @apply p-4;
+    @apply border;
+    @apply border-cyan-800;
+    @apply bg-cyan-300;
+  }
+
+  .btn-blue {
+    @apply p-2;
+    @apply bg-cyan-500;
+    @apply text-white;
+    @apply rounded;
+  }
+}
+
+/* Just a custom class */
+.my-content-area {
+  @apply: bg-green-200;
+  height: theme("spacing.128");
+}
